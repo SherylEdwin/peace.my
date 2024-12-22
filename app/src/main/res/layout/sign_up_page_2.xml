@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/IBSignUp2BackArrow"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Go Back"
+        android:padding="8dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVSignUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="265dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Sign Up"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/IBSignUp2BackArrow"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVSignUp2Address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Address"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2" />
+
+    <TextView
+        android:id="@+id/TVSignUp2Address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Address 2 (Optional)"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp2AddressBox" />
+
+    <TextView
+        android:id="@+id/TVSignUp2Postcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Postcode"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp2Address2Box" />
+
+    <TextView
+        android:id="@+id/TVSignUp2City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="City"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp2PostcodeBox" />
+
+    <TextView
+        android:id="@+id/TVSignUp2State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="State"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp2CityBox" />
+
+    <TextView
+        android:id="@+id/TVSignUp2DOB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Date of Birth"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp2StateBox" />
+
+    <TextView
+        android:id="@+id/TVSignUp2PhoneNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Phone Number"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignUp2DOBBox" />
+
+    <View
+        android:id="@+id/SignUp2AddressBox"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="54dp"
+        android:background="@drawable/background_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2Address" />
+
+    <View
+        android:id="@+id/SignUp2Address2Box"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="54dp"
+        android:background="@drawable/background_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2Address2" />
+
+    <View
+        android:id="@+id/SignUp2PostcodeBox"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="54dp"
+        android:background="@drawable/background_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2Postcode" />
+
+    <View
+        android:id="@+id/SignUp2CityBox"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="54dp"
+        android:background="@drawable/background_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2City" />
+
+    <View
+        android:id="@+id/SignUp2StateBox"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="54dp"
+        android:background="@drawable/background_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2State" />
+
+    <View
+        android:id="@+id/SignUp2DOBBox"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="54dp"
+        android:background="@drawable/background_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2DOB" />
+
+    <View
+        android:id="@+id/SignUp2PhoneNumberBox"
+        android:layout_width="315dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="54dp"
+        android:background="@drawable/background_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2PhoneNumber" />
+
+    <EditText
+        android:id="@+id/PASignUp2Address"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Address"
+        android:inputType="textPostalAddress"
+        android:padding="12dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#A2A2A2"
+
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2Address" />
+
+    <EditText
+        android:id="@+id/PASignUp2Address2"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Address 2 (Optional)"
+        android:inputType="textPostalAddress"
+        android:padding="12dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#A2A2A2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2Address2" />
+
+    <EditText
+        android:id="@+id/TNSignUp2Postcode"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Postcode"
+        android:inputType="number"
+        android:padding="12dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#A2A2A2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2Postcode" />
+
+    <EditText
+        android:id="@+id/PTSignUp2City"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="City"
+        android:inputType="text"
+        android:padding="12dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#A2A2A2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2City" />
+
+    <Spinner
+        android:id="@+id/SSignUp2States"
+        android:layout_width="315dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:dropDownWidth="match_parent"
+        android:entries="@array/states_array"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2State" />
+
+    <EditText
+        android:id="@+id/TDSignUp2DOB"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Date of Birth"
+        android:inputType="date"
+        android:padding="12dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#A2A2A2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2DOB" />
+
+    <EditText
+        android:id="@+id/TPSignUp2PhoneNumber"
+        android:layout_width="314dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="54dp"
+        android:background="#00000000"
+        android:ems="10"
+        android:fontFamily="@font/poppins"
+        android:hint="Phone Number"
+        android:inputType="phone"
+        android:padding="12dp"
+        android:selectAllOnFocus="false"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#A2A2A2"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVSignUp2PhoneNumber" />
+
+    <Button
+        android:id="@+id/BtnSignUp2Next"
+        android:layout_width="315dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/primary_button"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#F8F8F8"
+        app:layout_constraintBottom_toTopOf="@+id/BtnSignUp2Cancel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/BtnSignUp2Cancel"
+        android:layout_width="315dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/secondary_button"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

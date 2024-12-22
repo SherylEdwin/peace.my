@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2">
+
+    <include layout="@layout/bottom_navigation_menu" />
+
+    <View
+        android:id="@+id/HomeTopBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:background="#98A869"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/HomeBackgroundPanel"
+        android:layout_width="350dp"
+        android:layout_height="210dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="93dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/background_white"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomeTopBackground" />
+
+    <TextView
+        android:id="@+id/TVHomePeaceMy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="35dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="peace.my"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/HomeTopBackground" />
+
+    <TextView
+        android:id="@+id/TVHomeNews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="News"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeBackgroundPanel" />
+
+    <View
+        android:id="@+id/HomeNews"
+        android:layout_width="340dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/background_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVHomeNews" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="260dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TVHomeNews"
+        app:cardCornerRadius="16dp">
+
+        <ImageView
+            android:id="@+id/IVHomeNews"
+            android:layout_width="340dp"
+            android:layout_height="260dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/news_image_1" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/TVHomeNewsTitle"
+        android:layout_width="340dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="36dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Flood in Kelantan"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/HomeNews" />
+
+    <ImageButton
+        android:id="@+id/IBHomeSymptomTracking"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Symptom tracking"
+        android:elevation="5dp"
+        app:layout_constraintStart_toStartOf="@+id/HomeBackgroundPanel"
+        app:layout_constraintTop_toTopOf="@+id/HomeBackgroundPanel"
+        app:srcCompat="@drawable/symptom_tracking" />
+
+    <ImageButton
+        android:id="@+id/IBHomeMedicationManagement"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="172dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Medication management"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/HomeTopBackground"
+        app:layout_constraintTop_toTopOf="@+id/HomeBackgroundPanel"
+        app:srcCompat="@drawable/medication_management" />
+
+    <ImageButton
+        android:id="@+id/IBHomeDonorPledge"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Show/Donor pledge"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBackgroundPanel"
+        app:layout_constraintTop_toTopOf="@+id/HomeBackgroundPanel"
+        app:srcCompat="@drawable/donor_pledge" />
+
+    <ImageButton
+        android:id="@+id/IBHomeEducation"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="123dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Education"
+        android:elevation="5dp"
+        android:src="@drawable/education"
+        app:layout_constraintStart_toStartOf="@+id/HomeBackgroundPanel"
+        app:layout_constraintTop_toTopOf="@+id/HomeBackgroundPanel" />
+
+    <ImageButton
+        android:id="@+id/IBHomeCalendar"
+        android:layout_width="64dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="88dp"
+        android:background="@android:color/transparent"
+        android:contentDescription="Calendar"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBackgroundPanel"
+        app:layout_constraintTop_toTopOf="@+id/HomeBackgroundPanel"
+        app:srcCompat="@drawable/calendar" />
+
+    <TextView
+        android:id="@+id/TVHomeSymptomTracking"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Symptom tracking"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/IBHomeSymptomTracking"
+        app:layout_constraintTop_toBottomOf="@+id/IBHomeSymptomTracking" />
+
+    <TextView
+        android:id="@+id/TVHomeMedicationManagement"
+        android:layout_width="92dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginEnd="130dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Medication management"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/HomeBackgroundPanel"
+        app:layout_constraintStart_toStartOf="@+id/HomeBackgroundPanel"
+        app:layout_constraintTop_toBottomOf="@+id/IBHomeMedicationManagement" />
+
+    <TextView
+        android:id="@+id/TVHomeDonorPledge"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Donor pledge"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/IBHomeDonorPledge"
+        app:layout_constraintTop_toBottomOf="@+id/IBHomeDonorPledge" />
+
+    <TextView
+        android:id="@+id/TVHomeEducation"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Education"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/IBHomeEducation"
+        app:layout_constraintTop_toBottomOf="@+id/IBHomeEducation" />
+
+    <TextView
+        android:id="@+id/TVHomeCalendar"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Calendar"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/IBHomeCalendar"
+        app:layout_constraintTop_toBottomOf="@+id/IBHomeCalendar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

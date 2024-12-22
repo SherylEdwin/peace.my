@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2F2F2"
+    android:elevation="5dp">
+
+    <include layout="@layout/bottom_navigation_menu" />
+
+    <View
+        android:id="@+id/SettingsTopBackground"
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:background="#98A869"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/TVSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Settings"
+        android:textColor="#000000"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="@+id/SettingsTopBackground"
+        app:layout_constraintTop_toTopOf="@+id/SettingsTopBackground" />
+
+    <View
+        android:id="@+id/SettingsProfileBox"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="77dp"
+        android:background="@drawable/background_white"
+        android:elevation="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SettingsTopBackground" />
+
+    <ImageView
+        android:id="@+id/IVSettingsUser"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:elevation="5dp"
+        app:layout_constraintStart_toStartOf="@+id/SettingsProfileBox"
+        app:layout_constraintTop_toTopOf="@+id/SettingsProfileBox"
+        tools:srcCompat="@drawable/user" />
+
+    <TextView
+        android:id="@+id/TVSettingsName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="First Name, Last Name"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/IVSettingsUser"
+        app:layout_constraintTop_toTopOf="@+id/SettingsProfileBox" />
+
+    <TextView
+        android:id="@+id/TVSettingsRiskSymptom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Low Risk No Symptom"
+        android:textColor="#000000"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/IVSettingsUser"
+        app:layout_constraintTop_toTopOf="@+id/SettingsProfileBox" />
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsFavourites"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SettingsProfileBox">
+
+        <ImageView
+            android:id="@+id/IVFavorites"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Favorite Icon"
+            android:src="@drawable/favorites" />
+
+        <TextView
+            android:id="@+id/TVSettingsFavorites"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Favorites"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsMedicalHistory"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSettingsFavourites">
+
+        <ImageView
+            android:id="@+id/IVMedicalHistory"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Medical History Icon"
+            android:src="@drawable/medical_history" />
+
+        <TextView
+            android:id="@+id/TVSettingsMedicalHistory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Medical History"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsAccount"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSettingsMedicalHistory">
+
+        <ImageView
+            android:id="@+id/IVAccount"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Favorite Icon"
+            android:src="@drawable/account" />
+
+        <TextView
+            android:id="@+id/TVSettingsAccount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Account"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsPrivacy"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSettingsAccount">
+
+        <ImageView
+            android:id="@+id/IVPrivacy"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Favorite Icon"
+            android:src="@drawable/privacy" />
+
+        <TextView
+            android:id="@+id/TVSettingsPrivacy"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Privacy"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsNotifications"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSettingsPrivacy">
+
+        <ImageView
+            android:id="@+id/IVNotifications"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Favorite Icon"
+            android:src="@drawable/notifications" />
+
+        <TextView
+            android:id="@+id/TVSettingsNotifications"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Notifications"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsStorage"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSettingsNotifications">
+
+        <ImageView
+            android:id="@+id/IVStorage"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Favorite Icon"
+            android:src="@drawable/storage_and_data" />
+
+        <TextView
+            android:id="@+id/TVSettingsStorage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Storage and data"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsHelp"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSettingsStorage">
+
+        <ImageView
+            android:id="@+id/IVHelp"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Favorite Icon"
+            android:src="@drawable/help" />
+
+        <TextView
+            android:id="@+id/TVSettingsHelp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Help"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/BtnSettingsLogOut"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/button_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="13dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onFavoritesClicked"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnSettingsHelp">
+
+        <ImageView
+            android:id="@+id/IVLogOut"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:contentDescription="Favorite Icon"
+            android:src="@drawable/log_out" />
+
+        <TextView
+            android:id="@+id/TVSettingsLogOut"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/poppins_medium"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
